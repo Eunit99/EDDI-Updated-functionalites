@@ -2,7 +2,7 @@
 An updated features added to EDDI
 
 
-# How to MAke Use of the Themes
+# How to Make Use of the Themes
  This is a guide on how to use the themes. The themes are located in `themes.css` can only be activated/changed manually by the admin for now. 
 
 ##### The list of themes to be used are:

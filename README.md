@@ -3,7 +3,7 @@ An updated features added to EDDI
 
 
 # How to Make Use of the Themes
- This is a guide on how to use the themes. The themes are located in `themes.css` can only be activated/changed manually by the admin for now. 
+ This is a guide on how to use/change themes. The themes are located in `themes.css` can only be activated/changed manually by the admin for now. 
 
 ##### The list of themes to be used are:
 
@@ -24,7 +24,7 @@ To do that, it is simple.
 3. Replace all `var(--default__` to a theme name of your choice. In this case, let us say `var(--mangrove__` 
 4. Then press `CTRL+ALT+ENTER` on the text editor to do an all replace.
 5. Then press `CTRL+S` to save your file
-6. Refresh page on your browser to view the changes. The changes are only see on the `index.html` file of the `chat window` and `index.html` file of the `overlay page`
+6. Refresh page on your browser to view the changes. The changes are only see on the `index.html` page of the `chat window` and `index.html` page of the `overlay page`
 
 ### Note: 
-You will have to reconfigure the chat `settings.js` file to work with EDDI's environment (just like it was done the last time); I just use an example to demonstrate the chat functionality. 
+You will have to reconfigure the chat `settings.js` file to work with EDDI's environment (just like it was done the last time); I just use this example of the chat flow to demonstrate the chat functionality. 

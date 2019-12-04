@@ -1,0 +1,155 @@
+cssVars({
+
+    // Targets
+    rootElement: document,
+    shadowDOM: true,
+
+    // Sources
+    include: '[data-eddi-themes]',
+    exclude: '',
+    variables: {
+        // Global attributes 
+        '--white': '#ffffff',
+        '--border__color': '#dddddd',
+        '--card__color': '#212529',
+
+
+
+        // Default theme colors 
+
+        '--default__theme__color': '# 0056 b3 ',
+        '--default__theme__bg__color': '#0056b3',
+        '--default__primary__1': '#0056b3',
+        '--default__primary__2': '#007bff',
+        '--default__primary__3': '#3a8ebb',
+        '--default__received__msg__bg': 'rgba(213, 232, 255, 0.35)',
+        '--default__received__msg__txt': '#393939',
+        '--default__sent__msg__bg': '#1a88ff',
+        '--default__sent__msg__txt': '#ffffff',
+        '--default__input__bg': '#efefef',
+        '--default__input__txt': '#393939',
+
+        // Snipcart theme colors 
+        '--snipcart__theme__color': '#F3E367',
+        '--snpcart__theme__bg__color': '#F3E367',
+        '--snipcart__primary__1': '#F3E367',
+        '--snipcart__primary__2': '#929D9E',
+        '--snipcart__primary__3': '#7F8688',
+        '--snipcart__received__msg__bg': 'rgba(249, 241, 185, 0.35)',
+        '--snipcart__received__msg__txt': '#393939',
+        '--snipcart__sent__msg__bg': '#eed72b',
+        '--snipcart__sent__msg__txt': '#ffffff',
+        '--snipcart__input__bg': '#efefef',
+        '--snipcart__input__txt': '#393939',
+
+        // Creative theme colors 
+        '--creative__theme__color': '#FB8122',
+        '--creative__theme__bg__color': '#FB8122',
+        '--creative__primary__1': '#FB8122',
+        '--creative__primary__2': '#1D2228',
+        '--creative__primary__3': '#E1E2E2',
+        '--creative__received__msg__bg': 'rgba(253, 212, 180, 0.35)',
+        '--creative__received__msg__txt': '#393939',
+        '--creative__sent__msg__bg': '#f97e1f',
+        '--creative__sent__msg__txt': '#ffffff',
+        '--creative__input__bg': '#efefef',
+        '--creative__input__txt': '#393939',
+
+        // Mangrove theme colors 
+        '--mangrove__theme__color': '#D48166',
+        '--mangrove__theme__bg__color': '#D48166',
+        '--mangrove__primary__1': '#D48166',
+        '--mangrove__primary__2': '#373A36',
+        '--mangrove__primary__3': '#E6E2DD',
+        '--mangrove__received__msg__bg': 'rgba(244, 222, 215, 0.35)',
+        '--mangrove__received__msg__txt': '#393939',
+        '--mangrove__sent__msg__bg': '#cd6c4c',
+        '--mangrove__sent__msg__txt': '#ffffff',
+        '--mangrove__input__bg': '#efefef',
+        '--mangrove__input__txt': '#393939',
+
+        // Elle theme colors 
+        '--elle__theme__color': '#151617',
+        '--elle__theme__bg__color': '#151617',
+        '--elle__primary__1': '#151617',
+        '--elle__primary__2': '#090A0A',
+        '--elle__primary__3': '#151516',
+        '--elle__received__msg__bg': 'rgba(215, 217, 219, 0.35)',
+        '--elle__received__msg__txt': '#393939',
+        '--elle__sent__msg__bg': '#878c92',
+        '--elle__sent__msg__txt': '#ffffff',
+        '--elle__input__bg': '#efefef',
+        '--elle__input__txt': '#393939',
+
+        // Torn theme colors 
+        '--torn__theme__color': '#1F3044',
+        '--torn__theme__bg__color': '#1F3044',
+        '--torn__primary__1': '#1F3044',
+        '--torn__primary__2': '#6289b7',
+        '--torn__primary__3': '#646C79',
+        '--torn__received__msg__bg': 'rgba(203, 216, 231, 0.35)',
+        '--torn__received__msg__txt': '#393939',
+        '--torn__sent__msg__bg': '#6289b7',
+        '--torn__sent__msg__txt': '#ffffff',
+        '--torn__input__bg': '#efefef',
+        '--torn__input__txt': '#393939',
+
+        // Tareq theme colors 
+        '--tareq__theme__color': '#C60021',
+        '--tareq__theme__bg__color': '#C60021',
+        '--tareq__primary__1': '#C60021',
+        '--tareq__primary__2': '#737373',
+        '--tareq__primary__3': '#E3E3E3',
+        '--tareq__received__msg__bg': 'rgba(255, 204, 213, 0.35)',
+        '--tareq__received__msg__txt': '#393939',
+        '--tareq__sent__msg__bg': '#ff1a40',
+        '--tareq__sent__msg__txt': '#ffffff',
+        '--tareq__input__bg': '#efefef',
+        '--tareq__input__txt': '#393939',
+
+        // Baobla colors 
+        '--baobla__theme__color': '#56642A',
+        '--baobla__theme__bg__color': '#56642A',
+        '--baobla__primary__1': '#56642A',
+        '--baobla__primary__2': '#849531',
+        '--baobla__primary__3': '#92A332',
+        '--baobla__received__msg__bg': 'rgba(225, 232, 201, 0.35)',
+        '--baobla__received__msg__txt': '#393939',
+        '--baobla__sent__msg__bg': '#a5bb5d',
+        '--baobla__sent__msg__txt': '#ffffff',
+        '--baobla__input__bg': '#efefef',
+        '--baobla__input__txt': '#393939',
+
+        // Conseil theme colors 
+        '--conseil__theme__color': '#C39EA0',
+        '--conseil__theme__bg__color': '#C39EA0',
+        '--conseil__primary__1': '#C39EA0',
+        '--conseil__primary__2': '#5BB659',
+        '--conseil__primary__3': '#F8E5E5',
+        '--conseil__received__msg__bg': 'rgba(226, 208, 208, 0.35)',
+        '--conseil__received__msg__txt': '#393939',
+        '--conseil__sent__msg__bg': '#a87171',
+        '--conseil__sent__msg__txt': '#ffffff',
+        '--conseil__input__bg': '#efefef',
+        '--conseil__input__txt': '#393939',
+    },
+
+    // Options
+
+    onlyLegacy: false, // Treat all browsers as legacy
+
+    preserveStatic: false,
+    preserveVars: false,
+    silent: false,
+    updateDOM: true,
+    updateURLs: true,
+    watch: false,
+
+    // Callbacks
+    onWarning(message) {
+        console.log(message); // Some messages in the console
+    },
+    onError(message) {
+        console.log(message); // Some messages in the console
+    },
+});

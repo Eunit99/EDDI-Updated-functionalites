@@ -6,7 +6,7 @@ var local = (!document.location.hostname); // check if local
 // --------------------------------------- //
 
 
-// ********** CHAT SETTINGS START ********//
+// CHAT SETTINGS START ---------------------- //
 
 function storyController(questions) {
     current = 0;
@@ -156,56 +156,9 @@ function calculateDelay(string) {
     return delay;
 }
 
-// Tabs
-
-function tabHandler() {
-    $tab = $('#menu ul li');
-    $content = $('.content');
-    $defaultTab = $('#chat');
-    var animationOver = true;
-
-    $defaultTab.addClass('active');
-    $("#" + $defaultTab.attr('data-content')).addClass('activeContent');
-
-    $tab.click(function () {
-        // If Active when you click
-        if (!$(this).hasClass('active')) {
-            animationOver = false;
-            var tabContent = "#" + $(this).attr('data-content');
-
-            // Make tab active
-            $tab.removeClass('active');
-            $(this).addClass('active');
-
-            // Remove old content
-            if ($('.activeContent') != $(tabContent)) {
-                $('.activeContent').hide().removeClass('activeContent');
-            }
-
-            // Make content active
-            $(tabContent).show().addClass('activeContent');
-
-            //Special case for chat
-            if ($(".active").attr('id') == "chat") {
-                smoothScrollBottom();
-                $(".messaging").each(function () {
-                    $(this).removeClass('tada').removeClass('fadeInUp').addClass('fadeIn');
-                });
-            }
-
-            //Special case for about
-            if ($(".active").attr('id') == "about") {
-                $('html,body').animate({
-                    scrollTop: 0
-                }, 0);
-            }
-        }
-    });
-}
 
 // })(); END GLOBAL
 
 $(document).ready(function () {
     new storyController(questions);
-    new tabHandler();
 });

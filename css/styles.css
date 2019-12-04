@@ -1,20 +1,26 @@
-/*   Note, we are using the theme from 'themes.css' To make a desired theme effective;
-     just replace '--default__x' to say '--snipcart__x'
+/*   
+    * Note, we are using the theme from `themes.css`
+    * To make a desired theme effective; just `CTRL+H` current `--THEME_NAME__` ex: `--default__` to say `--snipcart__`
+    * Or refer to the accompanied README.md file to learn more!
+    * (c) 2019-2020 Emmanuel Uchenna <http://eunit99.github.io> 
 */
+
 body {
     -webkit-tap-highlight-color: transparent;
     /* Removes the blue highlight when button tapped on mobile */
 }
 
 .theme__bg__color {
-    background-color: var(--default__theme__bg__color) !important;
+    /* Fallback for Unsopported browsers */
+    background-color: var(--default__theme__bg__color, #0056b3) !important;
 }
 
 .theme__color {
-    color: var(--default__theme__color) !important;
+    /* Fallback for Unsopported browsers */
+    color: var(--default__theme__color, #0056b3) !important;
 }
 
-.mt-80 {
+.mt-100 {
     margin-top: 80px;
 }
 
@@ -27,28 +33,35 @@ body {
     max-height: 40%;
     max-width: 40%;
     transform: translate (-50%, -50%);
-    background-color: var(--default__primary__1);
+    /* Fallback for Unsopported browsers */
+    background-color: var(--default__primary__1, #0056b3);
     border-radius: 20px;
-    box-shadow: 0 2px 32px 0 var(--default__primary__3);
+    /* Fallback for Unsopported browsers */
+    box-shadow: 0 2px 32px 0 var(--default__primary__3, #3a8ebb);
     padding: 30px;
 }
 
 .noJS a {
-    color: var(--default__primary__2);
+    /* Fallback for Unsopported browsers */
+    color: var(--default__primary__2, #007bff);
     text-decoration: none;
-    border-bottom: 2px dotted var(--white);
+    /* Fallback for Unsopported browsers */
+    border-bottom: 2px dotted var(--white), #ffffff;
     background-color: inherit;
 }
 
 .noJS a:hover {
-    color: var(--white)
+    /* Fallback for Unsopported browsers */
+    color: var(--white, #ffffff);
 }
 
 .noJSText {
-    color: var(--white);
+    /* Fallback for Unsopported browsers */
+    color: var(--white, #ffffff);
     text-align: center;
     font-size: 26px;
-    background-color: var(--default__primary__1);
+    /* Fallback for Unsopported browsers */
+    background-color: var(--default__primary__1, #0056b3);
 }
 
 .noJSText i {
@@ -74,11 +87,13 @@ body {
     max-height: 10rem;
     display: block;
     margin-right: 2.5%;
-    background: var(--default__input_bg);
+    /* Fallback for Unsopported browsers */
+    background: var(--default__input_bg, #efefef);
     border-radius: 20px 0 20px 20px;
     font-size: 14px;
     margin: 0;
-    color: var(--default__input__txt);
+    /* Fallback for Unsopported browsers */
+    color: var(--default__input__txt, #393939);
     padding: 10px 15px 8px;
 }
 
@@ -92,8 +107,10 @@ textarea,
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    caret-color: var(--default__received__msg__txt);
-    color: var(--white);
+    /* Fallback for Unsopported browsers */
+    caret-color: var(--default__received__msg__txt, #393939);
+    /* Fallback for Unsopported browsers */
+    color: var(--white, #ffffff);
     display: block;
     margin-bottom: .5em;
 }
@@ -109,10 +126,6 @@ textarea,
 }
 
 @media screen and (max-width: 960px) {
-    .container {
-        font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding: 0 30px;
-    }
 
     .displayOff {
         display: none;
@@ -131,27 +144,33 @@ textarea,
         max-height: 40%;
         max-width: 40%;
         transform: translate (-50%, -50%);
-        background-color: var(--default__primary__1) !important;
+        /* Fallback for Unsopported browsers */
+        background-color: var(--default__primary__1, #0056b3);
         border-radius: 20px;
-        box-shadow: 0 1px 16px 0 var(--default__primary__3);
+        /* Fallback for Unsopported browsers */
+        box-shadow: 0 1px 16px 0 var(--default__primary__3, #3a8ebb);
         padding: 10px;
     }
 
     .noJS a {
         text-decoration: none;
-        border-bottom: 1px dotted var(--white);
+        /* Fallback for Unsopported browsers */
+        border-bottom: 1px dotted var(--white, #ffffff);
         background-color: inherit;
     }
 
     .noJS a:hover {
-        color: var(--white)
+        /* Fallback for Unsopported browsers */
+        color: var(--white, #ffffff);
     }
 
     .noJSText {
-        color: var(--white);
+        /* Fallback for Unsopported browsers */
+        color: var(--white, #ffffff);
         text-align: center;
         font-size: 16px;
-        background-color: var(--default__primary__1);
+        /* Fallback for Unsopported browsers */
+        background-color: var(--default__primary__1, #0056b3);
     }
 
     .noJSText i {
@@ -216,6 +235,7 @@ div.sent_msg p {
 
 .message:before {
     content: '';
+    /* Fallback for Unsopported browsers */
     background: linear-gradient(var(--white), transparent);
     position: absolute;
     width: 100%;
@@ -227,16 +247,18 @@ div.sent_msg p {
 }
 
 .chatbox__title {
-    background: -webkit-linear-gradient(90deg, var(--default__primary__1) 0%, var(--default__primary__2) 100%);
-    background: -moz-linear-gradient(90deg, var(--default__primary__1) 0%, var(--default__primary__2) 100%);
-    background: -o-linear-gradient(90deg, var(--default__primary__1) 0%, var(--default__primary__2) 100%);
-    background: -ms-linear-gradient(90deg, var(--default__primary__1) 0%, var(--default__primary__2) 100%);
-    background: linear-gradient(90deg, var(--default__primary__1) 0%, var(--default__primary__2) 100%);
+    background: -webkit-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    background: -moz-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    background: -o-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    background: -ms-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    background: linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    /* Fallback for Unsopported browsers */
 }
 
 
 .chatbox__title {
-    box-shadow: 0 1px 16px 0 var(--default__primary__3);
+    box-shadow: 0 1px 16px 0 var(--default__primary__3, #3a8ebb);
+    /* Fallback for Unsopported browsers */
 }
 
 .chatbox__title {
@@ -266,7 +288,8 @@ div.sent_msg p {
 }
 
 .chatbox__title h5 a {
-    color: var(--white);
+    /* Fallback for Unsopported browsers */
+    color: var(--white, #ffffff);
     max-width: 195px;
     display: inline;
     text-decoration: none;
@@ -310,7 +333,8 @@ div.sent_msg p {
     width: 12px;
     height: 12px;
     display: inline-block;
-    border-bottom: 2px solid var(--white);
+    /* Fallback for Unsopported browsers */
+    border-bottom: 2px solid var(--white, #ffffff);
 }
 
 .chatbox__title__close svg {
@@ -324,9 +348,12 @@ div.sent_msg p {
 .chatbox__credentials {
     padding: 15px;
     border-top: 0;
-    background-color: var(--white);
-    border-left: 1px solid var(--border__color);
-    border-right: 1px solid var(--border__color);
+    /* Fallback for Unsopported browsers */
+    background-color: var(--white, #ffffff);
+    /* Fallback for Unsopported browsers */
+    border-left: 1px solid var(--border__color, #dddddd);
+    /* Fallback for Unsopported browsers */
+    border-right: 1px solid var(--border__color, #dddddd);
     -webkit-flex-grow: 1;
     flex-grow: 1;
 }
@@ -388,25 +415,40 @@ div.chatbox__body.messaging::-webkit-scrollbar,
 }
 
 /*---------chat window with message---------------*/
+
 /* Styling for overlay chat page */
 
 .chatMain {
     height: 550px;
     /* Controls the height of the overlay chat page */
-    width: 600px;
+    width: 750px;
     /* Controls the width of the overlay chat page */
     overflow-y: scroll;
 }
 
+/* For small screens */
+@media only screen and (max-width: 720px) {
+    .chatMain {
+        height: 420px;
+        /* Controls the height of the overlay chat page */
+        width: inherit;
+        /* Controls the width of the overlay chat page */
+        overflow-y: scroll;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+}
+
 /* Styling for overlay chat page */
 img.chat_img {
-    height: 100% !important;
-    width: 100% !important;
-    margin-bottom: 12px;
+    height: 50% !important;
+    width: 50% !important;
+    margin-bottom: 2px;
 }
 
 .inbox_msg {
-    border: 1px solid var(--default__border__color);
+    /* Fallback for Unsopported browsers */
+    border: 1px solid var(--border__color, #dddddd);
     clear: both;
     overflow: hidden;
     width: 100%;
@@ -448,20 +490,23 @@ img.chat_img {
 }
 
 .received_withd_msg p {
-    background-color: var(--default__received__msg__bg);
+    background-color: var(--default__received__msg__bg, rgba(213, 232, 255, 0.35));
+    /* Fallback for Unsopported browsers */
+    color: var(--default__received__msg__txt, #393939);
     border-radius: 0 20px 20px 20px;
-    color: var(--default__received__msg__txt);
     font-size: 14px;
     margin: 0;
     padding: 10px 15px 8px;
 }
 
 .sent_msg p {
-    background-color: var(--default__sent__msg__bg);
+    /* Fallback for Unsopported browsers */
+    background-color: var(--default__sent__msg__bg, #1a88ff);
     border-radius: 20px 0 20px 20px;
     font-size: 14px;
     margin: 0;
-    color: var(--default__sent__msg__txt);
+    /* Fallback for Unsopported browsers */
+    color: var(--default__sent__msg__txt, #ffffff);
     padding: 10px 15px 8px;
 }
 
@@ -479,3 +524,113 @@ img.chat_img {
 .messaging {
     padding: 0 0 30px 0;
 }
+
+/* Overlay styling START */
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-weight: bolder;
+    position: relative;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fallback color */
+    z-index: 10;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Overlay styling END */
+
+
+/* Styling for responsive container START */
+.mt-auto {
+    margin-top: auto;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.section.group {
+    margin: 40px 12px;
+}
+
+.container {
+    padding: 80px 10px;
+    margin: -15px;
+}
+
+.card-body {
+    border: 1px solid var(--border__color, #dddddd) !important;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+}
+
+.card-title {
+    color: var(--default__primary__2, #007bff) !important;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 0 12px;
+}
+
+p.card-text {
+    color: #393939;
+    font-size: 16px;
+    margin: 0 0 22px 4px;
+    line-height: 25px;
+}
+
+.justify-content-center {
+    text-align: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.btn {
+    color: var(--white, #ffffff);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--default__primary__2, #007bff);
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+
+/* Styling for responsiveness END */

@@ -1,8 +1,17 @@
+/*   
+    * Themes.css
+    * v1.0.0    
+    * To make a desired theme effective; just `CTRL+H` current `--THEME_NAME__` ex: `--default__` to say `--snipcart__` in `styles.css`
+    * Or refer to the accompanied README.md file to learn more!
+    * (c) 2019-2020 Emmanuel Uchenna <http://eunit99.github.io> 
+*/
 :root {
 
     /* Global attributes */
     --white: #ffffff;
     --border__color: #dddddd;
+    --card__color: #212529;
+
 
     /* Default theme colors */
     --default__theme__color: #0056b3;
@@ -14,7 +23,7 @@
     --default__received__msg__txt: #393939;
     --default__sent__msg__bg: #1a88ff;
     --default__sent__msg__txt: #ffffff;
-    --default__input_bg: #efefef;
+    --default__input__bg: #efefef;
     --default__input__txt: #393939;
 
     /* Snipcart theme colors */
@@ -27,7 +36,7 @@
     --snipcart__received__msg__txt: #393939;
     --snipcart__sent__msg__bg: #eed72b;
     --snipcart__sent__msg__txt: #ffffff;
-    --snipcart__input_bg: #efefef;
+    --snipcart__input__bg: #efefef;
     --snipcart__input__txt: #393939;
 
     /* Creative theme colors */
@@ -40,7 +49,7 @@
     --creative__received__msg__txt: #393939;
     --creative__sent__msg__bg: #f97e1f;
     --creative__sent__msg__txt: #ffffff;
-    --creative__input_bg: #efefef;
+    --creative__input__bg: #efefef;
     --creative__input__txt: #393939;
 
     /* Mangrove theme colors */
@@ -53,7 +62,7 @@
     --mangrove__received__msg__txt: #393939;
     --mangrove__sent__msg__bg: #cd6c4c;
     --mangrove__sent__msg__txt: #ffffff;
-    --mangrove__input_bg: #efefef;
+    --mangrove__input__bg: #efefef;
     --mangrove__input__txt: #393939;
 
     /* Elle theme colors */
@@ -66,7 +75,7 @@
     --elle__received__msg__txt: #393939;
     --elle__sent__msg__bg: #878c92;
     --elle__sent__msg__txt: #ffffff;
-    --elle__input_bg: #efefef;
+    --elle__input__bg: #efefef;
     --elle__input__txt: #393939;
 
     /* Torn theme colors */
@@ -79,7 +88,7 @@
     --torn__received__msg__txt: #393939;
     --torn__sent__msg__bg: #6289b7;
     --torn__sent__msg__txt: #ffffff;
-    --torn__input_bg: #efefef;
+    --torn__input__bg: #efefef;
     --torn__input__txt: #393939;
 
     /* Tareq theme colors */
@@ -92,10 +101,10 @@
     --tareq__received__msg__txt: #393939;
     --tareq__sent__msg__bg: #ff1a40;
     --tareq__sent__msg__txt: #ffffff;
-    --tareq__input_bg: #efefef;
+    --tareq__input__bg: #efefef;
     --tareq__input__txt: #393939;
 
-    /* Baobla theme colors */
+    /* Baobla colors */
     --baobla__theme__color: #56642A;
     --baobla__theme__bg__color: #56642A;
     --baobla__primary__1: #56642A;
@@ -105,7 +114,7 @@
     --baobla__received__msg__txt: #393939;
     --baobla__sent__msg__bg: #a5bb5d;
     --baobla__sent__msg__txt: #ffffff;
-    --baobla__input_bg: #efefef;
+    --baobla__input__bg: #efefef;
     --baobla__input__txt: #393939;
 
     /* Conseil theme colors */
@@ -118,6 +127,6 @@
     --conseil__received__msg__txt: #393939;
     --conseil__sent__msg__bg: #a87171;
     --conseil__sent__msg__txt: #ffffff;
-    --conseil__input_bg: #efefef;
+    --conseil__input__bg: #efefef;
     --conseil__input__txt: #393939;
 }

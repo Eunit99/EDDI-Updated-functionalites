@@ -5,8 +5,8 @@ cssVars({
     shadowDOM: true,
 
     // Sources
-    include: '[data-eddi-themes]',
-    exclude: '',
+    include: '[data-themes-include]',
+    exclude: '[data-themes-exclude]',
     variables: {
         // Global attributes 
         '--white': '#ffffff',
@@ -138,7 +138,7 @@ cssVars({
 
     onlyLegacy: false, // Treat all browsers as legacy
 
-    preserveStatic: false,
+    preserveStatic: true,
     preserveVars: false,
     silent: false,
     updateDOM: true,
@@ -152,4 +152,15 @@ cssVars({
     onError(message) {
         console.log(message); // Some messages in the console
     },
+
+    // Display transformed CSS
+    onComplete: function (cssText, styleNodes, cssVariables, benchmark) {
+        var codeElm = document.getElementById('updated-eddi-themes');
+
+        // Format CSS (external library)
+        cssText = css_beautify(cssText);
+
+        // Update <style> tag with CSS result
+        codeElm.textContent = cssText;
+    }
 });

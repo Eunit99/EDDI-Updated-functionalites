@@ -597,7 +597,7 @@ img.chat_img {
 }
 
 .card-title {
-    color: var(--default__primary__2, #007bff) !important;
+    color: var(--default__primary__1, #007bff) !important;
     font-size: 24px;
     font-weight: normal;
     font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -627,7 +627,7 @@ a.btn {
     color: var(--white, #ffffff);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--default__primary__2, #007bff);
+    background-color: var(--default__primary__1, #007bff);
     padding: 8px 14px;
     border-radius: 4px;
 }

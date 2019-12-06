@@ -1,9 +1,7 @@
 // Script for Chat window START
-$(window).on("load", function () {
-    $("body").ready(function () {
-        $(".chatbox_container").hide().delay(100).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
-        $(".chatbox_container").removeClass("displayNoneChat"); //Removes class "displayNoneChat" and displays the Chatbox container
-    });
+$("body").ready(function () {
+    $(".chatbox_container").hide().delay(100).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
+    $(".chatbox_container").removeClass("displayNoneChat"); //Removes class "displayNoneChat" and displays the Chatbox container
 });
 // Script for Chat window END
 

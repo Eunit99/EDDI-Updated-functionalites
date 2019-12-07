@@ -8,7 +8,7 @@ manually by the admin for now.
 
 ##### The list of themes to be used are:
 
-##### 1. The `Default` theme
+##### 1. `Default` theme
 ##### 2. `Snipcart` theme
 ##### 3. `Creative` theme
 ##### 4. `Mangrove` theme
@@ -29,5 +29,6 @@ manually by the admin for now.
 6. Refresh the pages on your browser to view the changes.
 
 ### **Note:**
+##### You will need to study every piece of codes to understand their functionality, though I tried as much as I could to comment.
 You will have to reconfigure the chat `settings.js` file to work with EDDI's environment (just like it was done the last
 time); I just use this example of the chat flow to demonstrate the chat functionality.

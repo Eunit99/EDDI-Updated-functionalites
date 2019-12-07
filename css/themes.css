@@ -16,8 +16,8 @@
     /* Default theme colors */
     --default__theme__color: #0056b3;
     --default__theme__bg__color: #0056b3;
-    --default__primary__1: #0056b3;
-    --default__primary__2: #007bff;
+    --default__primary__1: #007bff;
+    --default__primary__2: #0056b3;
     --default__primary__3: #3a8ebb;
     --default__received__msg__bg: rgba(213, 232, 255, 0.35);
     --default__received__msg__txt: #393939;

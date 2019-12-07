@@ -31,14 +31,13 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
     <!--  Stylesheets -->
-    <link data-themes-exclude rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link data-themes-include rel="stylesheet" href="css/themes.css" />
-    <link data-themes-include rel="stylesheet" href="css/styles.css" />
-    <link data-themes-exclude rel="stylesheet" href="css/responsive.css" />
-    <link data-themes-exclude rel="stylesheet" href="css/linearicons.css" />
-    <link data-themes-exclude rel="stylesheet" href="css/fontawesome.css">
-    <link data-themes-exclude rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/html5reset.css">
     <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -91,9 +90,37 @@
     </main>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    
+    <noscript>
+        <div class="noJS noJSText">
+            <i class="fa fa-exclamation-triangle fa-3x"></i>
+            E.D.D.I can't run without JavaScript. Click <a href="https://enable-javascript.com/"
+                title="Learn how to enable JavaScript on your browser" target="_blank">here</a> to learn more.
+        </div>
+    </noscript>
     <script src="js/scripts.js"></script>
-    <script src="js/css-var-settings.js"></script>
+    <script>
+        // Stylying for IE and unsupported browsers START
+
+        // * This is a tweak to make IE support `--default__theme`
+        // * After trying so many methods; polyfill, ponyfill, ie11CustomProperties inclusive
+        // * All those methods didn't work out; so I'm using now!
+        // * (c) Eunit 2019 - 2020
+
+        if (!document.body.msMatchesSelector === false) {
+            // for index.html
+            window.MSInputMethodContext && document.documentMode && document.write(
+                '<link rel="stylesheet" href="css/ie-default-style.css" />');
+            // for ../index.html
+            window.MSInputMethodContext && document.documentMode && document.write(
+                '<link rel="stylesheet" href="../css/ie-default-style.css" />');
+            // for ../../index.html
+            window.MSInputMethodContext && document.documentMode && document.write(
+                '<link rel="stylesheet" href="../../css/ie-default-style.css" />');
+        }
+
+        // Stylying for IE and unsupported browsers END
+    </script>
 
 </body>
 

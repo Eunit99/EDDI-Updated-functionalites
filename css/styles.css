@@ -34,7 +34,7 @@ body {
     max-width: 40%;
     transform: translate (-50%, -50%);
     /* Fallback for Unsopported browsers */
-    background-color: var(--default__primary__1, #0056b3);
+    background-color: var(--default__primary__1, #007bff);
     border-radius: 20px;
     /* Fallback for Unsopported browsers */
     box-shadow: 0 2px 32px 0 var(--default__primary__3, #3a8ebb);
@@ -43,7 +43,7 @@ body {
 
 .noJS a {
     /* Fallback for Unsopported browsers */
-    color: var(--default__primary__2, #007bff);
+    color: var(--default__primary__2, #0056b3);
     text-decoration: none;
     /* Fallback for Unsopported browsers */
     border-bottom: 2px dotted var(--white), #ffffff;
@@ -61,7 +61,7 @@ body {
     text-align: center;
     font-size: 26px;
     /* Fallback for Unsopported browsers */
-    background-color: var(--default__primary__1, #0056b3);
+    background-color: var(--default__primary__1, #007bff);
 }
 
 .noJSText i {
@@ -145,7 +145,7 @@ textarea,
         max-width: 40%;
         transform: translate (-50%, -50%);
         /* Fallback for Unsopported browsers */
-        background-color: var(--default__primary__1, #0056b3);
+        background-color: var(--default__primary__1, #007bff);
         border-radius: 20px;
         /* Fallback for Unsopported browsers */
         box-shadow: 0 1px 16px 0 var(--default__primary__3, #3a8ebb);
@@ -170,7 +170,7 @@ textarea,
         text-align: center;
         font-size: 16px;
         /* Fallback for Unsopported browsers */
-        background-color: var(--default__primary__1, #0056b3);
+        background-color: var(--default__primary__1, #007bff);
     }
 
     .noJSText i {
@@ -247,11 +247,11 @@ div.sent_msg p {
 }
 
 .chatbox__title {
-    background: -webkit-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
-    background: -moz-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
-    background: -o-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
-    background: -ms-linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
-    background: linear-gradient(90deg, var(--default__primary__1, #0056b3) 0%, var(--default__primary__2, #007bff) 100%);
+    background: -webkit-linear-gradient(90deg, var(--default__primary__1, #007bff) 0%, var(--default__primary__2, #0056b3) 100%);
+    background: -moz-linear-gradient(90deg, var(--default__primary__1, #007bff) 0%, var(--default__primary__2, #0056b3) 100%);
+    background: -o-linear-gradient(90deg, var(--default__primary__1, #007bff) 0%, var(--default__primary__2, #0056b3) 100%);
+    background: -ms-linear-gradient(90deg, var(--default__primary__1, #007bff) 0%, var(--default__primary__2, #0056b3) 100%);
+    background: linear-gradient(90deg, var(--default__primary__1, #007bff) 0%, var(--default__primary__2, #0056b3) 100%);
     /* Fallback for Unsopported browsers */
 }
 
